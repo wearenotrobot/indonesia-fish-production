@@ -61,8 +61,6 @@ def data_extraction():
             i = i + 1
 
         hasil = dict()
-        # hasil['nama_jenis_ikan'] = ikan0
-        # hasil['total_produksi'] =
 
         hasil['type_fish1'] = tf1
         hasil['production1'] = pr1
@@ -93,8 +91,7 @@ def show_data(result):
     if result is None:
         print('Tidak bisa menemukan data')
 
-    print('INDONESIA FISH PRODUCTION IN 2021')
-    # print(f"Nama Jenis Ikan {result['nama_jenis_ikan']}")
+    print('Fish type and total production in 2021')
     print(result['type_fish1'], result['production1'])
     print(result['type_fish2'], result['production2'])
     print(result['type_fish3'], result['production3'])

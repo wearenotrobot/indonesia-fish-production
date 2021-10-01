@@ -1,6 +1,6 @@
 """
 Total fish production in Indonesia
-Data collected from KKP.go.id
+Data collected from http://pipp.djpt.kkp.go.id/produksi_harga
 """
 import produksiikan
 
