@@ -56,9 +56,9 @@ def data_extraction():
             elif i == 17:
                 pr9 = res.text
             elif i == 18:
-                tfm = res.text
+                tf10 = res.text
             elif i == 19:
-                prm = res.text
+                pr10 = res.text
             i = i + 1
 
         hasil = dict()
@@ -80,15 +80,15 @@ def data_extraction():
         hasil['production8'] = pr8
         hasil['type_fish9'] = tf9
         hasil['production9'] = pr9
-        hasil['type_fishm'] = tfm
-        hasil['productionm'] = prm
+        hasil['type_fish10'] = tf10
+        hasil['production10'] = pr10
         return hasil
-
-        import json
-        result = json.dumps(result)
-        print(type(result))
     else:
         return None
+
+# import json
+# result = json.dumps(result)
+# print(type(result))
 
 
 def show_data(result):
@@ -105,7 +105,4 @@ def show_data(result):
     print(result['type_fish7'], result['production7'])
     print(result['type_fish8'], result['production8'])
     print(result['type_fish9'], result['production9'])
-    print(result['type_fishm'], result['productionm'])
-
-
-
+    print(result['type_fish10'], result['production10'])
