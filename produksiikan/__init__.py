@@ -55,12 +55,15 @@ def data_extraction():
             elif i == 17:
                 pr9 = res.text
             elif i == 18:
-                tfm = res.text
+                tf10 = res.text
             elif i == 19:
-                prm = res.text
+                pr10 = res.text
             i = i + 1
 
         hasil = dict()
+        # hasil['nama_jenis_ikan'] = ikan0
+        # hasil['total_produksi'] =
+
         hasil['type_fish1'] = tf1
         hasil['production1'] = pr1
         hasil['type_fish2'] = tf2
@@ -79,13 +82,9 @@ def data_extraction():
         hasil['production8'] = pr8
         hasil['type_fish9'] = tf9
         hasil['production9'] = pr9
-        hasil['type_fishm'] = tfm
-        hasil['productionm'] = prm
+        hasil['type_fish10'] = tf10
+        hasil['production10'] = pr10
         return hasil
-
-        import json
-        result = json.dumps(result)
-        print(type(result))
     else:
         return None
 
@@ -94,7 +93,8 @@ def show_data(result):
     if result is None:
         print('Tidak bisa menemukan data')
 
-    print('Fish type and total production in 2021')
+    print('INDONESIA FISH PRODUCTION IN 2021')
+    # print(f"Nama Jenis Ikan {result['nama_jenis_ikan']}")
     print(result['type_fish1'], result['production1'])
     print(result['type_fish2'], result['production2'])
     print(result['type_fish3'], result['production3'])
@@ -104,7 +104,5 @@ def show_data(result):
     print(result['type_fish7'], result['production7'])
     print(result['type_fish8'], result['production8'])
     print(result['type_fish9'], result['production9'])
-    print(result['type_fishm'], result['productionm'])
-
-
+    print(result['type_fish10'], result['production10'])
 
