@@ -18,7 +18,6 @@ def data_extraction():
         i = 0
 
         for res in result:
-            print(i, res)
             if i == 0:
                 tf1 = res.text
             elif i == 1:
