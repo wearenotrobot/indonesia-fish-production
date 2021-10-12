@@ -18,7 +18,6 @@ def data_extraction():
         i = 0
 
         for res in result:
-            print(i, res)
             if i == 0:
                 tf1 = res.text
             elif i == 1:
@@ -95,7 +94,7 @@ def show_data(result):
     if result is None:
         print('Tidak bisa menemukan data')
 
-    print('Fish type and total production in 2021')
+    print('Fish type and total production (Kg)')
     print(result['type_fish1'], result['production1'])
     print(result['type_fish2'], result['production2'])
     print(result['type_fish3'], result['production3'])
