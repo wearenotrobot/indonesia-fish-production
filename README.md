@@ -9,12 +9,13 @@ This repository will scrape from [PIPP](http://pipp.djpt.kkp.go.id/produksi_harg
 This repository will use BeautifulSoup4 and Request, to produce output in the form of JSON. This package is ready to be used in web or mobile applications.
 
 ## How to use
-    import produksiikan
+```
+import produksiikan
 
-    if __name__ == '__main__':
-        print('Aplikasi Utama')
-        result = produksiikan.data_extraction()
-        produksiikan.show_data(result)
-        
+if __name__ == '__main__':
+    result = produksiikan.data_extraction()
+    produksiikan.show_data(result)
+```
+
 # Author
 mizan toyyibun
