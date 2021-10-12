@@ -1,7 +1,7 @@
 # indonesia-fish-production
 This Repository will give us information about the latest total marine fish production in Indonesia. 
 Data will be collected from PIPP (Pusat Informasi Pelabuhan Perikanan). The Name of the fish is written in Indonesian.
-The total production is in Kg
+The total production is in Kg.
 
 ## How it work?
 This package will scrape from [PIPP](http://pipp.djpt.kkp.go.id/produksi_harga) to get the latest marine fish production in Indonesia.
